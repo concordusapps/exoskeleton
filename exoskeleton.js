@@ -10,7 +10,7 @@
 (function(root, factory) {
   // Set up Backbone appropriately for the environment.
   if (typeof define === 'function' && define.amd) {
-    define(['underscore', 'jquery', 'exports'], function(_, $, exports) {
+    define(['jquery', 'exports'], function($, exports) {
       root.Backbone = root.Exoskeleton = factory(root, exports, _, $);
     });
   } else if (typeof exports !== 'undefined') {
